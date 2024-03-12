@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #36454F;
+  height: 100vh;
+}
+
+.message-box{
+  background-color: #F1F3E4;
+  height: 500px;
+  width: 25%;
+  border: 1px solid white;
+  margin: 5rem auto;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.messages{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 370px;
+  padding-bottom: 58px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.message
+{
+   width: fit-content;
+   background: #869095;
+   border-radius: 0px 15px 10px 15px;
+   margin: 1rem 1rem 0 1rem; 
+   max-width: 17rem;
+   padding: 1rem;
+}
+
+
+header{
+  background: white;
+  height: 2.5rem;
+  display: flex;
+  padding: 1rem;
+  border-bottom-color: #36454F;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#phone{
+  height: 1.7rem;
+}
+
+#video{
+  height: 2.5rem;
+}
+
+.images{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+header > h1{
+  font-size: 1.3rem;
+  margin: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header > img{
+  height: 2rem;
+}
+
+
+
+.messages > li:nth-child(even){
+  background: #93BA84;
+  align-self: flex-end;
+  border-radius: 15px 0px 15px 10px;
+}
+
+
+section{
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  width: 90%;
+  height: 40px;
+  margin: 0.5rem;
+  background-color: #F1F3E4;
+}
+
+section > input{
+  border-radius: 9px;
+  border: 1px solid #eee;
+  flex: 1;
+  margin: 2px;
+  padding: 0 8px;
+  height: 30px;
+}
+
+section > button{
+  background: #29442C;
+  color: #fff;
+  border: none;
+  margin: 2px;
+  border-radius: 10px;
+  height: 35px;
+  padding: 10px; 
+  font-size: 15px;
+}
